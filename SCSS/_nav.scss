@@ -1,0 +1,43 @@
+body{
+    max-width: 100%;
+    margin: 0;
+   
+}
+nav{
+    
+    ul{
+        @include center-list;
+        font-size: 1.2rem;
+        margin: 0 10%;
+        padding: 0;
+        list-style: none;
+        font-family: $font-secondary;
+        text-transform: uppercase;
+        font-weight: 900;
+        
+    }
+    
+    li{
+        padding: 25px 0px;
+        border-top: 8px solid $color1;     
+        &:hover{
+        cursor: pointer;
+        border-color: $color3;
+        color:  $color3;
+        border-color: $color3;
+        transition: 0.2s;
+        }
+    }
+    
+}
+
+#language{
+    border: 0px;
+    background-color: rgba(128, 128, 128,0.25);
+    border-radius: 30px;
+    padding: 8px 16px;
+    margin-top: 5px;
+    color: $color2;
+
+}
+

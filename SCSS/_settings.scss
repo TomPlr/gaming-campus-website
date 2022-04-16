@@ -1,0 +1,36 @@
+$color1: white;
+$color2: black;
+$color3: rgb(136, 26, 136);
+
+@font-face {
+  font-family: "font-main";
+  src: url(../fonts/montserrat/static/Montserrat-Thin.ttf);
+}
+@font-face {
+  font-family: "font-secondary";
+  src: url(../fonts/montserrat/static/Montserrat-Medium.ttf);
+}
+
+$font-main: "font-main", sans-serif;
+$font-secondary: "font-secondary", sans-serif;
+
+@mixin center-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@mixin button {
+  border: 1px solid white;
+  background: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: $font-secondary;  
+}

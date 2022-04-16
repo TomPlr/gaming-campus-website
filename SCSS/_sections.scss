@@ -1,0 +1,186 @@
+/************************ ICON PART********************************/
+
+.icon-part {
+  background: rgb(20, 20, 20);
+  color: $color1;
+  height: 600px;
+  @include center;
+
+  .icon-part-container {
+    @include center-list;
+    padding: 0px 15%;
+  }
+
+  .list-icon-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+
+    h3 {
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      margin: 15px 0px;
+    }
+
+    p {
+      font-size: 1.5rem;
+      text-align: center;
+      margin: 5%;
+    }
+
+    button {
+      @include button;
+      margin-top: 30px;
+      width: 200px;
+      padding: 15px;
+    }
+  }
+}
+
+/************************ NEWS PART********************************/
+
+.news-part {
+  background: rgb(228, 228, 228);
+  height: 900px;
+}
+.header-news {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  align-items: center;
+  padding: 0 15%;
+  height: 300px;
+
+  h2 {
+    font-family: $font-main;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  button {
+    margin: 0 0 0 15%;
+    padding: 20px 0px;
+    width: 300px;
+    border: 1px solid black;
+    background: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: $font-secondary;
+    font-size: 1.3rem;
+  }
+
+  .left-part {
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+}
+
+.main-news-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15%;
+  height: 500px;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 500px;
+    width: 300px;
+  }
+
+  .mn-pic {
+    box-shadow: 0px 0px 17px 2px rgba(0, 0, 0, 0.28);
+    padding: 0;
+    border-radius: 5px;
+
+    img {
+      border-radius: 5px;
+      height: 300px;
+      width: 300px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $color3;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+  }
+}
+
+/************************ CONTACTS  ********************************/
+
+.contact-list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15%;
+  height: 500px;
+
+  &:after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    border-bottom: 1px solid rgb(189, 189, 189);
+    
+  }
+
+  
+
+
+  .list {
+    padding: 10% 0;
+    width: 250px;
+    font-size: 1.3rem;
+
+    h5 {
+      text-transform: uppercase;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    
+    a {
+      text-decoration: none;
+      color: $color3;
+    }
+
+    img {
+      height: 300px;
+    }
+  }
+}
+
+.contact-medias {
+    padding: 75px 15%;
+    display: grid;
+    grid-template-columns: 27% 73%;
+
+    h3{
+        text-transform: uppercase
+    }
+
+    p{
+        font-size: 1.2rem
+    }
+
+    .medias-logos{
+        @include center-list;
+    }
+}
