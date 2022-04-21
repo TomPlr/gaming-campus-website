@@ -3,38 +3,39 @@
 .icon-part {
   background: rgb(20, 20, 20);
   color: $color1;
-  height: 600px;
+  height: 550px;
   @include center;
 
   .icon-part-container {
     @include center-list;
-    padding: 0px 15%;
+    width: 65%;
   }
 
   .list-icon-part {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 30%;
+    display: grid;
+    justify-items: center;
+    width: 33%;
 
     h3 {
       text-transform: uppercase;
-      font-size: 1.5rem;
+      font-size: 1rem;
       margin: 15px 0px;
     }
 
     p {
-      font-size: 1.5rem;
+      font-size: 1.1rem;
       text-align: center;
-      margin: 5%;
+      width: 85%;
+      margin: 0 auto;
     }
 
     button {
-      @include button;
-      margin-top: 30px;
-      width: 200px;
-      padding: 15px;
+      @include button2;
+      
+
+      &:hover{
+        @include hover
+      }
     }
   }
 }
@@ -43,47 +44,46 @@
 
 .news-part {
   background: rgb(228, 228, 228);
-  height: 900px;
+  height: 800px;
 }
 .header-news {
   display: grid;
   grid-template-columns: 70% 30%;
   align-items: center;
   padding: 0 15%;
-  height: 300px;
+  height: 200px;
 
   h2 {
     font-family: $font-main;
     text-transform: uppercase;
-    font-size: 2.2rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
     margin: 0;
   }
 
   button {
-    margin: 0 0 0 15%;
-    padding: 20px 0px;
-    width: 300px;
-    border: 1px solid black;
-    background: none;
+    @include button2;
     color: black;
-    text-transform: uppercase;
-    font-family: $font-secondary;
-    font-size: 1.3rem;
-  }
+    border: 1px solid black;
+    margin: 0;
+
+    &:hover{
+      @include hover
+    }
 
   .left-part {
     font-weight: 600;
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-top: 10px;
   }
 }
+}
 
 .main-news-container {
-  position: relative;
+  
   display: flex;
   justify-content: space-between;
   padding: 0 15%;
@@ -91,30 +91,49 @@
 
   div {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-direction: column;
-    height: 500px;
+    height: 480px;
     width: 300px;
+
+    h4{
+      width: 85%;
+      font-size: 1.1rem;
+      margin: 15px 0px;
+    }
+    p{
+      width: 85%;
+      margin: 0px;
+    }
+
+    a {
+      text-decoration: none;
+      color: $color3;
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+
+      &hover{
+        cursor: pointer;
+      }
+    }
   }
 
   .mn-pic {
     box-shadow: 0px 0px 17px 2px rgba(0, 0, 0, 0.28);
     padding: 0;
     border-radius: 5px;
+    height: 142%;
+    width: 85%;
 
     img {
       border-radius: 5px;
-      height: 300px;
-      width: 300px;
+      height: 100%;
+      width: 100%;
     }
   }
 
-  a {
-    text-decoration: none;
-    color: $color3;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-  }
+  
 }
 
 /************************ CONTACTS  ********************************/

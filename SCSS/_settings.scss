@@ -34,3 +34,21 @@ $font-secondary: "font-secondary", sans-serif;
   text-transform: uppercase;
   font-family: $font-secondary;  
 }
+
+@mixin button2 {
+  border: 1px solid white;
+  background: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: $font-secondary;  
+  margin-top: 30px;
+  width: 200px;
+  padding: 10px;
+}
+
+@mixin hover {
+  background: rgba($color: white, $alpha: 0.5);
+      cursor: pointer;
+  
+}
