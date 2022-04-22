@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "font-main";
+  font-family: "Montserrat-Thin";
   src: url(../fonts/montserrat/static/Montserrat-Thin.ttf);
 }
 
 @font-face {
-  font-family: "font-secondary";
+  font-family: "Montserrat-Medium";
   src: url(../fonts/montserrat/static/Montserrat-Medium.ttf);
 }
 
@@ -24,12 +24,13 @@ nav ul {
       -ms-flex-align: center;
           align-items: center;
   font-size: 0.9rem;
+  font-weight: bold;
   margin: 0 auto;
   padding: 0;
   list-style: none;
-  font-family: "font-secondary", sans-serif;
+  font-family: "Montserrat-Medium", sans-serif;
   text-transform: uppercase;
-  width: 75%;
+  width: 60%;
 }
 
 nav li {
@@ -52,10 +53,12 @@ nav li:hover {
   padding: 8px 16px;
   margin-top: 5px;
   color: black;
+  cursor: pointer;
 }
 
 header {
-  background: url(../assets/img/bg.jpg) fixed center no-repeat;
+  background: url(../assets/img/bg.jpg) fixed center/cover;
+  background-position-y: bottom;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,6 +69,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   height: 670px;
+  width: 100%;
 }
 
 .main-header {
@@ -94,7 +98,7 @@ header {
 
 .main-header h1 {
   color: white;
-  font-family: "font-secondary", sans-serif;
+  font-family: "Montserrat-Medium", sans-serif;
   text-transform: uppercase;
   font-size: 1.5rem;
   margin: 30px 0px;
@@ -110,7 +114,7 @@ header {
   background: none;
   color: white;
   text-transform: uppercase;
-  font-family: "font-secondary", sans-serif;
+  font-family: "Montserrat-Medium", sans-serif;
 }
 
 .main-header button:hover {
@@ -129,13 +133,17 @@ header {
       -ms-flex-align: center;
           align-items: center;
   background: white;
-  height: 125px;
+  height: 150px;
   width: 70%;
-  font-family: "font-secondary", sans-serif;
-  font-size: 1rem;
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
   margin: 0 auto;
-  padding: 0 10%;
   text-align: center;
+}
+
+.header-text p {
+  width: 100%;
 }
 
 /************************ ICON PART********************************/
@@ -171,7 +179,8 @@ header {
   display: -ms-grid;
   display: grid;
   justify-items: center;
-  width: 33%;
+  width: 30%;
+  height: 380px;
 }
 
 .icon-part .list-icon-part h3 {
@@ -184,6 +193,7 @@ header {
   font-size: 1.1rem;
   text-align: center;
   width: 85%;
+  height: 70px;
   margin: 0 auto;
 }
 
@@ -193,7 +203,7 @@ header {
   color: white;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-family: "font-secondary", sans-serif;
+  font-family: "Montserrat-Medium", sans-serif;
   margin-top: 30px;
   width: 200px;
   padding: 10px;
@@ -206,8 +216,8 @@ header {
 
 /************************ NEWS PART********************************/
 .news-part {
-  background: #e4e4e4;
-  height: 800px;
+  background: #f7f7f7;
+  height: 900px;
 }
 
 .header-news {
@@ -218,16 +228,23 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 15%;
+  margin: 0 auto;
   height: 200px;
+  width: 65%;
 }
 
 .header-news h2 {
-  font-family: "font-main", sans-serif;
+  font-family: "Montserrat-Thin", sans-serif;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   letter-spacing: 2px;
   margin: 0;
+}
+
+.header-news p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 10px 0px;
 }
 
 .header-news button {
@@ -236,27 +253,19 @@ header {
   color: white;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-family: "font-secondary", sans-serif;
+  font-family: "Montserrat-Medium", sans-serif;
   margin-top: 30px;
   width: 200px;
   padding: 10px;
   color: black;
   border: 1px solid black;
   margin: 0;
+  font-weight: bold;
 }
 
 .header-news button:hover {
   background: rgba(255, 255, 255, 0.5);
   cursor: pointer;
-}
-
-.header-news button .left-part {
-  font-weight: 600;
-}
-
-.header-news button p {
-  font-size: 1rem;
-  margin-top: 10px;
 }
 
 .main-news-container {
@@ -266,8 +275,9 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 15%;
+  margin: 0 auto;
   height: 500px;
+  width: 65%;
 }
 
 .main-news-container div {
@@ -281,14 +291,17 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 480px;
-  width: 300px;
+  height: 600px;
+  width: 27%;
+  font-family: "Montserrat-Medium", sans-serif;
+  font-weight: bold;
+  line-height: 150%;
 }
 
 .main-news-container div h4 {
   width: 85%;
   font-size: 1.1rem;
-  margin: 15px 0px;
+  margin: 20px 0px;
 }
 
 .main-news-container div p {
@@ -299,9 +312,11 @@ header {
 .main-news-container div a {
   text-decoration: none;
   color: #881a88;
-  font-size: 0.7rem;
+  font-size: 1rem;
   letter-spacing: 2px;
+  font-weight: bold;
   text-transform: uppercase;
+  width: 250%;
 }
 
 .main-news-container div ahover {
@@ -332,8 +347,9 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 15%;
+  margin: 0 auto;
   height: 500px;
+  width: 65%;
 }
 
 .contact-list:after {
@@ -349,13 +365,22 @@ header {
 }
 
 .contact-list .list {
-  padding: 10% 0;
+  margin: 100px 0;
+  height: 300px;
   width: 250px;
-  font-size: 1.3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Montserrat-Medium", sans-serif;
 }
 
-.contact-list .list h5 {
+.contact-list .list h3 {
   text-transform: uppercase;
+  font-weight: bold;
+}
+
+.contact-list .list p {
+  margin: 5px 0px;
+  line-height: 150%;
 }
 
 .contact-list .list ul {
@@ -366,6 +391,7 @@ header {
 .contact-list .list a {
   text-decoration: none;
   color: #881a88;
+  line-height: 280%;
 }
 
 .contact-list .list img {
@@ -373,19 +399,19 @@ header {
 }
 
 .contact-medias {
-  padding: 75px 15%;
+  margin: 50px auto;
+  width: 65%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 27% 73%;
       grid-template-columns: 27% 73%;
+  font-family: "Montserrat-Medium", sans-serif;
+  font-weight: bold;
 }
 
 .contact-medias h3 {
   text-transform: uppercase;
-}
-
-.contact-medias p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .contact-medias .medias-logos {
@@ -416,7 +442,8 @@ footer h3 {
   color: white;
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  font-family: "Montserrat-Thin", sans-serif;
 }
 
 footer ul {
@@ -429,6 +456,8 @@ footer ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 15%;
+  margin: 0 auto;
+  width: 60%;
+  padding: 0;
 }
 /*# sourceMappingURL=style.css.map */
